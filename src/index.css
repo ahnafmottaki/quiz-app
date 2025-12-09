@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme {
+  --font-primary: "Rubik", sans-serif;
+}
+
+html {
+  @apply font-primary;
+}
