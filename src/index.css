@@ -1,9 +1,31 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --secondary-foreground: #626c7f;
+}
+
+[data-theme="dark"] {
+  --background: #313e51;
+  --foreground: #ffffff;
+  --secondary-foreground: #abc1e1;
+}
 @theme {
   --font-primary: "Rubik", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-seondary-foreground: var(--secondary-foreground);
 }
 
 html {
   @apply font-primary;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.section-inline-padding {
+  @apply px-6 md:px-16 lg:px-0;
 }
