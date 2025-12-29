@@ -27,5 +27,5 @@ body {
 }
 
 .section-inline-padding {
-  @apply px-6 md:px-16 lg:px-0;
+  @apply px-6 md:px-16 lg:px-10 xl:px-0;
 }
